@@ -32,7 +32,6 @@
         .swal2-popup {
    
           width: 60% !important;
-          
         }
 
         .swal2-popup .swal2-content {
@@ -122,6 +121,23 @@
 
         }
 
+        .title_show{
+          background: #5b7baa;
+          margin-left: 16%;
+          padding-left: 395px;
+          width: 71%;
+        }
+
+        .fundo-costumer{
+          padding: 0px;
+          background: url(http://web.controlcondo.com.br/arquivos/2018/04/pattern.png) no-repeat center top fixed !important;
+          width: 100%;
+          overflow: hidden;
+          background-repeat: repeat !important;
+          background-size: unset !important;
+
+        }
+
         .hvr-rectangle-out:before {
             background: #678ec6 !important;
          }
@@ -191,19 +207,29 @@
                      </div>
                     </div>
                     <div class="row" style="margin-top: 6px;">
-                      <div class="col-md-4">
-                        <div class="hvr-bounce-in btn_effect" style="background: #33be33;">
+                      <div class="col-md-8">
+                        <div class="hvr-bounce-in btn_effect" id="btn-fz-simula" style="background: #33be33;">
                           <i class="fa fa-share"></i> Fazer Simulação
                         </div>
                       </div>
+                      <!--<div class="col-md-4">
+                      <div class="hvr-bounce-in btn_effect">
+                        <i class="fab fa-apple" style="font-size: 1.4em;"></i> App Store
+                      </div> 
+                     </div> -->
                     </div>
                     <div class="row" style="margin-top: 6px;">
                     <a  href="https://www.controlcondo.com.br/controlcondo/v2/">
-                      <div class="col-md-4">
-                        <div class="hvr-bounce-in btn_effect" >
+                      <div class="col-md-8">
+                        <div class="hvr-bounce-in btn_effect">
                           <i class="fa fa-building"></i> Meu Condominio
                         </div>
                       </div>
+                      <!--<div class="col-md-4">
+                      <div class="hvr-bounce-in btn_effect">
+                        <i class="fab fa-android" style="font-size: 1.4em;"></i> Android
+                      </div> 
+                     </div> -->
                     </a>
                     </div>
                       
@@ -234,12 +260,12 @@
         <li style="background-image: url(img/slider_1.jpg)" class="overlay">
           <div class="container">
             <div class="row">
-            <div class="col-md-4" style="left: 13%;margin-top: 163px;"><img style="width: 55%;" src="/controlcondo/img/home.png"></div>
-            <div class="col-md-2" style="margin-top: 224px;"><img style="width: 100%;" src="/controlcondo/img/ocorrencia.png"></div>
+            <div class="col-md-4" style="left: -8%;margin-top: 128px;"><img style="width: 62%;" src="/controlcondo/img/home.png"></div>
+            <div class="col-md-2" style="left: -15%;margin-top: 240px;"><img style="width: 100%;" src="/controlcondo/img/ocorrencia.png"></div>
 
               <div class="col-md-6">
                 <div class="probootstrap-slider-text text-center" style="padding: 24px;">
-                  <h1 class="probootstrap-heading" style="text-shadow: 0 2px 3px rgba(5, 5, 5, 0.48);margin-right: 517px;color:#3599d2">ControlCondo</h1>
+                  <h1 class="probootstrap-heading" style="text-shadow: 0 2px 3px rgba(5, 5, 5, 0.48);margin-right: 517px;color:#3599d2"><span>Control</span><span style="margin-left: 18px;">Condo</span></h1>
                   <p style="text-align: left;">Control Condo é uma rede social desenvolvida para facilitar a comunicação entre moradores, síndico e portaria. Proporcionando experiências únicas, aproximando as pessoas e melhorando a convivência em grupo. O grande diferencial desse sistema, é a plataforma online que possibilita a sincronização dos dados e informações gerados em nossos servidores na nuvem com o servidor Control Guarita instalado em seu condomínio. Nesse sentido temos total interação entre todas as esferas do condomínio de forma produtiva e descomplicada.</p>
                 </div>
               </div>
@@ -251,10 +277,10 @@
         <li style="background-image: url(img/slider_1.jpg)" class="overlay">
         <div class="container">
             <div class="row">
-            <div class="col-md-4" style="left: 13%;margin-top: 163px;"><img style="width: 55%;" src="/controlcondo/img/qrcode.png"></div>
+            <div class="col-md-4" style="left:9%;margin-top: 163px;"><img style="width: 62%;" src="/controlcondo/img/qrcode.png"></div>
               <div class="col-md-6">
                 <div class="probootstrap-slider-text text-center" style="padding: 24px;">
-                  <h1 class="probootstrap-heading" style="text-shadow: 0 2px 3px rgba(5, 5, 5, 0.48);margin-right: 517px;color:#3599d2">ControlGuarita</h1>
+                  <h1 class="probootstrap-heading" style="text-shadow: 0 2px 3px rgba(5, 5, 5, 0.48);margin-right: 517px;color:#3599d2"><span>Control</span><span style="margin-left: 18px;">Guarita</h1>
                   <p style="text-align: left;">Todas as ferramentas necessárias em um único software. Permitindo assim a atualização direta do sistema com os eventos do Control Guarita. E a atualização do software da portaria instantaneamente com os dados do sistema. Sem a necessidade de consultar vários sites/softwares para verificar a liberação de um visitante.</p>
                 </div>
               </div>
@@ -381,18 +407,26 @@
       </div>
     </section>      
     
-    <section class="probootstrap-section proboostrap-clients probootstrap-bg-white probootstrap-zindex-above-showcase">
+   
+    <section class="fundo-costumer probootstrap-section proboostrap-clients probootstrap-bg-white probootstrap-zindex-above-showcase" style="padding:0px">
+      <div class="col-md-12 section-heading probootstrap-animate fadeIn probootstrap-animated" data-animate-effect="fadeIn">
+              <div class="title_show">
+                <h1 style="color:white">PACOTE DE SISTEMA - CONTROL CONDO</h1>
+              </div>
+              <h3 style="font-size: 19px;color: rgba(0,0,0,.3);margin-left: 35%;">Confira todos os nossos planos e preços do pacote de sistema</h3>
+      </div>
       <div class="container">
-
+      
+         
         <!-- END row -->
         <div class="row">
           <div class="col-md-4 col-sm-6 col-xs-6 text-center client-logo probootstrap-animate" data-animate-effect="fadeIn">
             <div class="card bg-dark text-white">
               <div class="card-img-overlay" style="border: 1px solid #d2d2d2;">
-                <div style="background: #6588bb;padding: 6px;">
+                <div style="background: #e68f2b;padding: 6px;">
                   <span class="fa fa-trophy" style="font-size: 5em;color: white;"></span>
                 </div>
-                <div style="background: #557aaf;"><h5 style="margin-top: 0px;color:white" class="card-title">Plano : Bronze</h5></div>
+                <div style="background: #cd8a3c;"><h5 style="margin-top: 0px;color:white" class="card-title">Plano : Bronze</h5></div>
                 <p class="card-text">
                   <ul style="list-style: none;text-align: left;">
                     <li class="destaque"><strong>Está Incluso:</strong></li>
@@ -454,10 +488,10 @@
           <div class="col-md-4 col-sm-6 col-xs-6 text-center client-logo probootstrap-animate" data-animate-effect="fadeIn">
           <div class="card bg-dark text-white">
               <div class="card-img-overlay" style="border: 1px solid #d2d2d2;">
-                <div style="background: #6588bb;padding: 6px;">
+                <div style="background: #e6d54d;padding: 6px;">
                   <span class="fa fa-trophy" style="font-size: 5em;color: white;"></span>
                 </div>
-                <div style="background: #557aaf;"><h5 style="margin-top: 0px;color:white" class="card-title">Plano : Ouro</h5></div>
+                <div style="background: #d6c53f;"><h5 style="margin-top: 0px;color:white" class="card-title">Plano : Ouro</h5></div>
                 <p class="card-text">
                   <ul style="list-style: none;text-align: left;">
                     <li class="destaque"><strong>Está Incluso:</strong></li>
@@ -577,7 +611,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
-            <h2>Testimonial</h2>
+            <h2>PERGUNTAS FREQUENTES</h2>
+            <h3 style="font-size: 19px;color:rgba(0,0,0,.3)">Confira algumas dúvidas dos nossos usuários e vê se a sua se encaixa</h3>
           </div>
         </div>
         <!-- END row -->
@@ -590,7 +625,7 @@
                   <figure>
                     <img src="img/person_1.jpg" alt="Free Bootstrap Template by uicookies.com">
                   </figure>
-                  <blockquote class="quote">&ldquo;Design must be functional and functionality must be translated into visual aesthetics, without any reliance on gimmicks that have to be explained.&rdquo; <cite class="author">&mdash; Ferdinand A. Porsche <br> <span>Design Lead at AirBNB</span></cite></blockquote>
+                  <blockquote class="quote">&ldquo;Posso ter mais de um perfil vinculados a mesma conta no Control Condo?.&rdquo; <cite class="author">&mdash; Lucas Silva <br></cite></blockquote>
                 </div>
 
               </div>
@@ -599,7 +634,7 @@
                   <figure>
                     <img src="img/person_2.jpg" alt="Free Bootstrap Template by uicookies.com">
                   </figure>
-                  <blockquote class="quote">&ldquo;Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while.&rdquo; <cite class="author">&mdash; Steve Jobs <br> <span>Co-Founder Square</span></cite></blockquote>
+                  <blockquote class="quote">&ldquo;Esqueci minha senha, como recuperar?.&rdquo; <cite class="author">&mdash; Rafael Aranha <br></cite></blockquote>
                 </div>
               </div>
               <div class="item">
@@ -607,7 +642,7 @@
                   <figure>
                     <img src="img/person_3.jpg" alt="Free Bootstrap Template by uicookies.com">
                   </figure>
-                  <blockquote class="quote">&ldquo;I think design would be better if designers were much more skeptical about its applications. If you believe in the potency of your craft, where you choose to dole it out is not something to take lightly.&rdquo; <cite class="author">&mdash; Frank Chimero <br> <span>Creative Director at Twitter</span></cite></blockquote>
+                  <blockquote class="quote">&ldquo;Como liberar um visitante pelo app?.&rdquo; <cite class="author">&mdash; Nicolas Souza <br></cite></blockquote>
                 </div>
               </div>
               
@@ -632,7 +667,8 @@
           </div>
 
           <div class="row" style="margin-top: 34px;">
-            <div class="col-md-4" style="margin-left: 294px;">
+
+            <div class="col-md-4" style="margin-left: 26%;">
               <input type="number" id="qtd_unid" class="form-control" placeholder="Quantidade de Unidades"/>
             </div>
             <div class="col-md-4" style="margin-top: 10px;">
@@ -645,21 +681,26 @@
       </div>
     </section>
     
- 
+
+
+
+
+
+
+
+
+    
     <footer class="probootstrap-footer">
-      <div class="container">
+      <div class="container" style="width:95%">
         <div class="row">
           <div class="col-md-6">
             <div class="probootstrap-footer-widget">
-              <h3>Paragraph</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+              <h3>Control Condo</h3>
+              <p>Control Condo é uma rede social desenvolvida para facilitar a comunicação entre moradores, síndico e portaria. Proporcionando experiências únicas, aproximando as pessoas e melhorando a convivência em grupo. O grande diferencial desse sistema, é a plataforma online que possibilita a sincronização dos dados e informações gerados em nossos servidores na nuvem com o servidor Control Guarita instalado em seu condomínio.</p>
               <ul class="probootstrap-footer-social">
-                <li><a href="#"><i class="icon-twitter"></i></a></li>
-                <li><a href="#"><i class="icon-facebook"></i></a></li>
-                <li><a href="#"><i class="icon-github"></i></a></li>
-                <li><a href="#"><i class="icon-dribbble"></i></a></li>
-                <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                <li><a href="#"><i class="icon-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/controlguarita/"><i class="icon-facebook"></i></a></li>
+                <li><a href="#"><i class="icon-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCdas9PY7vrJhL9GENETHsew"><i class="icon-youtube"></i></a></li>
               </ul>
             </div>
           </div>
@@ -667,37 +708,47 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="probootstrap-footer-widget">
-                  <h3>Links</h3>
+                  <h3>Informações de contato</h3>
                   <ul>
-                    <li><a href="#">Knowledge Base</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Press Releases</a></li>
-                    <li><a href="#">Terms of services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><span class="fa fa-map-marker"></span> Endereço: Av. Argentina, 252
+                        <br>CEP: 13145-705, Jardim América – Paulinia – SP
+                    </li>
+                    <li><span class="fa fa-user"></span> Suporte Técnico Segunda à Sábado das 8:00 às 21:00</li>
+                    <li><span class="fa fa-phone"></span> Telefone: (19) 3244-7142</li>
+                    <li></li>
+                    <li></li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="probootstrap-footer-widget">
-                  <h3>Links</h3>
+                  <h3>Mapa Do Site</h3>
                   <ul>
-                    <li><a href="#">Knowledge Base</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Press Releases</a></li>
-                    <li><a href="#">Terms of services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Control Condo</a></li>
+                    <li><a href="#">O Control Condo é indicado</a></li>
+                    <li><a href="#">Funções</a></li>
+                    <li><a href="#">Mais funções</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Imagens Control Condo</a></li>
+                    <li><a href="#">Diferenciais</a></li>
+                    <li><a href="#">Depoimentos</a></li>
+                    <li><a href="#">Seja Um Integrador Control Condo</a></li>
+                    <li><a href="#">Perguntas Frequentes</a></li>
+                    <li><a href="#">Blog Na Principal</a></li>
+                    <li><a href="#">Pacote Do Sistema</a></li>
+                    <li><a href="#">Novidades</a></li>
+                    <li><a href="#">Contato</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="probootstrap-footer-widget">
-                  <h3>Links</h3>
+                  <h3>Facebook</h3>
                   <ul>
-                    <li><a href="#">Knowledge Base</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Press Releases</a></li>
-                    <li><a href="#">Terms of services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                   <li>
+                      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcontrolcondo%2F&tabs=timeline&width=286&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="284" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -709,7 +760,7 @@
         <!-- END row -->
         <div class="row">
           <div class="col-md-12 copyright">
-            <p><small>&copy; 2017 <a href="https://uicookies.com/">uiCookies:Stack</a>. All Rights Reserved. <br> Designed &amp; Developed with <i class="icon icon-heart"></i> by <a href="https://uicookies.com/">uicookies.com</a></small></p>
+            <p><small>&copy; 2019. Todos os direitos Reservados.</small></p>
           </div>
         </div>
       </div>
@@ -844,9 +895,19 @@
          }   
       }
 
-      
-        
-    </script>
+      $('#btn-fz-simula').click(function(){
+        var position  = $('.simular').offset();
+        $('html, body').animate({ scrollTop: position.top-100 }, 1000);
+      });
 
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+    </script>
   </body>
 </html>
