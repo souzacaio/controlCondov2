@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700">
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+
     <link href="css/hover.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -25,6 +27,35 @@
     <style>
         .probootstrap-slider-text p{
             color:white;
+        }
+
+        .swal2-popup {
+   
+          width: 60% !important;
+          
+        }
+
+        .swal2-popup .swal2-content {
+
+            font-size: 2.125em !important;
+ 
+          }
+
+        .simular{
+          background: #3599d2;
+          width: 100%;
+          padding: 46px;
+        }
+
+        .btn-calcular{
+          background: #33be33;
+          color: white;
+          /* width: 128px; */
+          padding: 15px 32px 15px 35px;
+          /* width: 58%; */
+          /* margin-top: 11px; */
+          cursor:pointer
+
         }
 
         .flexslider .slides>li.overlay:before {
@@ -90,6 +121,10 @@
           left: 10%;
 
         }
+
+        .hvr-rectangle-out:before {
+            background: #678ec6 !important;
+         }
     </style>
   </head>
   <body>
@@ -240,7 +275,7 @@
         <div class="row">
             <div class="row probootstrap-gutter60">
             <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
-                <div class="service hover_service text-center">
+                <div class="service hover_service text-center" style="height: 429px;">
                 <div class="icon"><i class="fa fa-bullhorn"></i></div>
                 <div class="text">
                     <h3>TECNOLOGIA ANTI-PASS BACK</h3>
@@ -249,7 +284,7 @@
                 </div>
             </div>
             <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
-                <div class="service hover_service text-center">
+                <div class="service hover_service text-center" style="height: 429px;">
                 <div class="icon"><i class="fa fa-comments"></i></div>
                 <div class="text">
                     <h3>INTEGRAÇÃO OFF-LINE</h3>
@@ -258,7 +293,7 @@
                 </div>
             </div>
             <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
-                <div class="service hover_service text-center">
+                <div class="service hover_service text-center" style="height: 429px;">
                 <div class="icon"><i class="fa fa-qrcode"></i></div>
                 <div class="text">
                     <h3>QR CODE</h3>
@@ -269,7 +304,7 @@
           </div>
           <div class="row">
             <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
-                <div class="service hover_service text-center">
+                <div class="service hover_service text-center" style="height: 429px;">
                 <div class="icon"><i class="icon icon-alarm"></i></div>
                 <div class="text">
                     <h3>INTEGRAÇÃO TOTAL</h3>
@@ -278,7 +313,7 @@
                 </div>
             </div>
             <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
-                <div class="service hover_service text-center">
+                <div class="service hover_service text-center" style="height: 429px;">
                 <div class="icon"><i class="fa fa-child"></i></div>
                 <div class="text">
                     <h3>ENQUETES</h3>
@@ -287,7 +322,7 @@
                 </div>
             </div>
             <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
-                <div class="service hover_service text-center">
+                <div class="service hover_service text-center" style="height: 429px;">
                 <div class="icon"><i class="fa fa-check-circle"></i></div>
                 <div class="text">
                     <h3>CONTROL GUARITA</h3>
@@ -361,26 +396,27 @@
                 <p class="card-text">
                   <ul style="list-style: none;text-align: left;">
                     <li class="destaque"><strong>Está Incluso:</strong></li>
-                    <li>Comunicados</li>
-                    <li>Enquetes</li>
-                    <li>Chat</li>
-                    <li>Ocorrências</li>
-                    <li>Fórum</li>
-                    <li>Classificados</li>
-                    <li>Cadastro de Pets</li>
-                    <li>Documentos</li>
-                    <li>Reserva de áreas comuns</li>
-                    <li>Liberação de visitantes</li>
-                    <li>Qr Code</li>
-                    <li>Alertas de entrada e saída de visitantes</li>
-                    <li>Alertas de chegada de correspondências</li>
-                    <li>Até 100 unidades</li>
-                    <li>Integração Control Guarita</li>
-                    <li>Backup Control Guarita em nuvem</li>
+                    <li><span class="fa fa-arrow-right"></span> Comunicados</li>
+                    <li><span class="fa fa-arrow-right"></span> Enquetes</li>
+                    <li><span class="fa fa-arrow-right"></span> Chat</li>
+                    <li><span class="fa fa-arrow-right"></span> Ocorrências</li>
+                    <li><span class="fa fa-arrow-right"></span> Fórum</li>
+                    <li><span class="fa fa-arrow-right"></span> Classificados</li>
+                    <li><span class="fa fa-arrow-right"></span> Cadastro de Pets</li>
+                    <li><span class="fa fa-arrow-right"></span> Documentos</li>
+                    <li><span class="fa fa-arrow-right"></span> Reserva de áreas comuns</li>
+                    <li><span class="fa fa-arrow-right"></span> Liberação de visitantes</li>
+                    <li><span class="fa fa-arrow-right"></span> Qr Code</li>
+                    <li><span class="fa fa-arrow-right"></span> Alertas de entrada e saída de visitantes</li>
+                    <li><span class="fa fa-arrow-right"></span> Alertas de chegada de correspondências</li>
+                    <li><span class="fa fa-arrow-right"></span> Até 100 unidades</li>
+                    <li><span class="fa fa-arrow-right"></span> Integração Control Guarita</li>
+                    <li><span class="fa fa-arrow-right"></span> Backup Control Guarita em nuvem</li>
                   </ul>
                 </p>
               </div>
           </div>
+          <div class="hvr-rectangle-out c_button"><span>COMPRAR O PACOTE</span></div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-6 text-center client-logo probootstrap-animate" data-animate-effect="fadeIn">
           <div class="card bg-dark text-white">
@@ -392,27 +428,27 @@
                 <p class="card-text">
                   <ul style="list-style: none;text-align: left;">
                     <li class="destaque"><strong>Está Incluso:</strong></li>
-                    <li>Comunicados</li>
-                    <li>Enquetes</li>
-                    <li>Chat</li>
-                    <li>Ocorrências</li>
-                    <li>Fórum</li>
-                    <li>Classificados</li>
-                    <li>Cadastro de Pets</li>
-                    <li>Documentos</li>
-                    <li>Reserva de áreas comuns</li>
-                    <li>Liberação de visitantes</li>
-                    <li>Qr Code</li>
-                    <li>Alertas de entrada e saída de visitantes</li>
-                    <li>Alertas de chegada de correspondências</li>
-                    <li>De 310 a 600 unidades</li>
-                    <li>Integração Control Guarita</li>
-                    <li>Backup Control Guarita em nuvem</li>
+                    <li><span class="fa fa-arrow-right"></span> Comunicados</li>
+                    <li><span class="fa fa-arrow-right"></span> Enquetes</li>
+                    <li><span class="fa fa-arrow-right"></span> Chat</li>
+                    <li><span class="fa fa-arrow-right"></span> Ocorrências</li>
+                    <li><span class="fa fa-arrow-right"></span> Fórum</li>
+                    <li><span class="fa fa-arrow-right"></span> Classificados</li>
+                    <li><span class="fa fa-arrow-right"></span> Cadastro de Pets</li>
+                    <li><span class="fa fa-arrow-right"></span> Documentos</li>
+                    <li><span class="fa fa-arrow-right"></span> Reserva de áreas comuns</li>
+                    <li><span class="fa fa-arrow-right"></span> Liberação de visitantes</li>
+                    <li><span class="fa fa-arrow-right"></span> Qr Code</li>
+                    <li><span class="fa fa-arrow-right"></span> Alertas de entrada e saída de visitantes</li>
+                    <li><span class="fa fa-arrow-right"></span> Alertas de chegada de correspondências</li>
+                    <li><span class="fa fa-arrow-right"></span> De 310 a 600 unidades</li>
+                    <li><span class="fa fa-arrow-right"></span> Integração Control Guarita</li>
+                    <li><span class="fa fa-arrow-right"></span> Backup Control Guarita em nuvem</li>
                   </ul>
-                  
                 </p>
               </div>
           </div>
+          <div class="hvr-rectangle-out c_button">COMPRAR O PACOTE</div>
           </div>
           <div class="clearfix visible-sm-block visible-xs-block"></div>
           <div class="col-md-4 col-sm-6 col-xs-6 text-center client-logo probootstrap-animate" data-animate-effect="fadeIn">
@@ -425,31 +461,60 @@
                 <p class="card-text">
                   <ul style="list-style: none;text-align: left;">
                     <li class="destaque"><strong>Está Incluso:</strong></li>
-                    <li>Comunicados</li>
-                    <li>Enquetes</li>
-                    <li>Chat</li>
-                    <li>Ocorrências</li>
-                    <li>Fórum</li>
-                    <li>Classificados</li>
-                    <li>Cadastro de Pets</li>
-                    <li>Documentos</li>
-                    <li>Reserva de áreas comuns</li>
-                    <li>Liberação de visitantes</li>
-                    <li>Qr Code</li>
-                    <li>Alertas de entrada e saída de visitantes</li>
-                    <li>Alertas de chegada de correspondências</li>
-                    <li>A partir de 610 unidades</li>
-                    <li>Integração Control Guarita</li>
-                    <li>Backup Control Guarita em nuvem</li>
+                    <li><span class="fa fa-arrow-right"></span> Comunicados</li>
+                    <li><span class="fa fa-arrow-right"></span> Enquetes</li>
+                    <li><span class="fa fa-arrow-right"></span> Chat</li>
+                    <li><span class="fa fa-arrow-right"></span> Ocorrências</li>
+                    <li><span class="fa fa-arrow-right"></span> Fórum</li>
+                    <li><span class="fa fa-arrow-right"></span> Classificados</li>
+                    <li><span class="fa fa-arrow-right"></span> Cadastro de Pets</li>
+                    <li><span class="fa fa-arrow-right"></span> Documentos</li>
+                    <li><span class="fa fa-arrow-right"></span> Reserva de áreas comuns</li>
+                    <li><span class="fa fa-arrow-right"></span> Liberação de visitantes</li>
+                    <li><span class="fa fa-arrow-right"></span> Qr Code</li>
+                    <li><span class="fa fa-arrow-right"></span> Alertas de entrada e saída de visitantes</li>
+                    <li><span class="fa fa-arrow-right"></span> Alertas de chegada de correspondências</li>
+                    <li><span class="fa fa-arrow-right"></span> A partir de 610 unidades</li>
+                    <li><span class="fa fa-arrow-right"></span> Integração Control Guarita</li>
+                    <li><span class="fa fa-arrow-right"></span> Backup Control Guarita em nuvem</li>
                   </ul>
                 </p>
               </div>
+              <div class="hvr-rectangle-out c_button">COMPRAR O PACOTE</span></div>
           </div>
           </div>
         </div>
       </div>
-    </section>
 
+       <!-- send email -->
+    <div class="container" style="display:none" id="send-email">
+         <div class="row" style="margin-bottom: 17px;">
+            <div class="col-md-7">
+                <input id="Nome" type="text" class="form-control" name="Nome" placeholder="Nome">
+            </div>
+            <div class="col-md-5">
+                <input id="Email" type="Email" class="form-control" name="Email" placeholder="Email">
+            </div>
+         </div>  
+         <div class="row" style="margin-bottom: 17px;">
+            <div class="col-md-12">
+                <input id="Assunto" type="text" class="form-control" name="Assunto" placeholder="Assunto">
+            </div>
+         </div>    
+         <div class="row" style="margin-bottom: 17px;">
+            <div class="col-md-12">
+                <textarea class="form-control" rows="6" placeholder="Menssagem"></textarea>
+            </div>
+         </div>  
+         <div class="row" style="margin-bottom: 17px;">
+            <div class="col-md-12">
+                <button class="btn btn-primary"><i class="fa fa-share-square"></i> Enviar Mensagem</button>
+            </div>
+         </div> 
+     </div>
+    </section>
+         
+   
 
     <section class="probootstrap-section">
       <div class="container">
@@ -554,106 +619,27 @@
     </section>
 
     <section class="probootstrap-section probootstrap-border-top probootstrap-bg-white">
-      <div class="container">
+      <div class="container" style="width:100%">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
-            <h2>Simulação</h2>
+            
           </div>
         </div>
         <!-- END row -->
-        <div class="row">
-          <div class="col-md-12">
-              <div id="calculator">
-                <div id="calculator_header">
-                  <h1><i class="fa fa-calculator"></i> Calculadora</h1>
-                </div>
-                <div id="calculator_body">
-                  <div class="row" style="margin-bottom: 26px">
-                        <div class="col-md-3">
-                            <div class="hvr-bounce-out calculator_btn">
-                              <span class="calculator_value">+<span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="hvr-bounce-out calculator_btn">
-                              <span class="calculator_value">-<span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="hvr-bounce-out calculator_btn">
-                              <span class="calculator_value">x<span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="hvr-bounce-out calculator_btn">
-                              <span class="calculator_value">/<span>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="margin-left: 42px;">
-                      <div class="row">
-                        <div class="col-md-3">
-                            <div class="hvr-bounce-out calculator_btn">
-                              <span class="calculator_value">0<span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="hvr-bounce-out calculator_btn">
-                              <span class="calculator_value">1<span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="hvr-bounce-out calculator_btn">
-                              <span class="calculator_value">2<span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="hvr-bounce-out calculator_btn">
-                              <span class="calculator_value">3<span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="hvr-bounce-out calculator_btn">
-                              <span class="calculator_value">4<span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="hvr-bounce-out calculator_btn">
-                              <span class="calculator_value">5<span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="hvr-bounce-out calculator_btn">
-                              <span class="calculator_value">6<span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="hvr-bounce-out calculator_btn">
-                              <span class="calculator_value">7<span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="hvr-bounce-out calculator_btn">
-                              <span class="calculator_value">8<span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="hvr-bounce-out calculator_btn">
-                              <span class="calculator_value">9<span>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
+        <div class="simular">
+          <div style="margin: -39px 0 0 38%;">
+            <h1 style="color:white">Simule agora o seu plano! </h1>
           </div>
+
+          <div class="row" style="margin-top: 34px;">
+            <div class="col-md-4" style="margin-left: 294px;">
+              <input type="number" id="qtd_unid" class="form-control" placeholder="Quantidade de Unidades"/>
+            </div>
+            <div class="col-md-4" style="margin-top: 10px;">
+               <span class="btn-calcular" onclick="calc()"><span class="fa fa-calculator"></span> Calcular</span>
+            </div>
+        </div>
+              
         </div>
         <!-- END row -->
       </div>
@@ -832,6 +818,35 @@
 
     <script src="js/scripts.min.js"></script>
     <script src="js/custom.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script>
+      $('.c_button').click(function(){
+         $('#send-email').fadeIn();
+      });
+
+      function calc(){
+          var qtd  = $('#qtd_unid').val();
+          var calc = qtd*2;
+          var f2 = calc.toLocaleString('pt-br', {minimumFractionDigits: 2});
+
+          if(qtd == ''){
+            Swal.fire(
+            'Valor Plano',
+            'Preencha a quantidade de unidades.',
+            'error'
+          )
+          }else{
+            Swal.fire(
+            'Valor Plano',
+            f2+' R$ / Mês.',
+            'success'
+          )
+         }   
+      }
+
+      
+        
+    </script>
 
   </body>
 </html>
