@@ -192,7 +192,7 @@
                     </div>
                     <div class="row" style="margin-top: 6px;">
                       <div class="col-md-4">
-                        <div class="hvr-bounce-in btn_effect" style="background: #33be33;">
+                        <div class="hvr-bounce-in btn_effect" id="btn-fz-simula" style="background: #33be33;">
                           <i class="fa fa-share"></i> Fazer Simulação
                         </div>
                       </div>
@@ -389,10 +389,10 @@
           <div class="col-md-4 col-sm-6 col-xs-6 text-center client-logo probootstrap-animate" data-animate-effect="fadeIn">
             <div class="card bg-dark text-white">
               <div class="card-img-overlay" style="border: 1px solid #d2d2d2;">
-                <div style="background: #6588bb;padding: 6px;">
+                <div style="background: #72bd5f;padding: 6px;">
                   <span class="fa fa-trophy" style="font-size: 5em;color: white;"></span>
                 </div>
-                <div style="background: #557aaf;"><h5 style="margin-top: 0px;color:white" class="card-title">Plano : Bronze</h5></div>
+                <div style="background: #6aad59;"><h5 style="margin-top: 0px;color:white" class="card-title">Plano : Bronze</h5></div>
                 <p class="card-text">
                   <ul style="list-style: none;text-align: left;">
                     <li class="destaque"><strong>Está Incluso:</strong></li>
@@ -454,10 +454,10 @@
           <div class="col-md-4 col-sm-6 col-xs-6 text-center client-logo probootstrap-animate" data-animate-effect="fadeIn">
           <div class="card bg-dark text-white">
               <div class="card-img-overlay" style="border: 1px solid #d2d2d2;">
-                <div style="background: #6588bb;padding: 6px;">
+                <div style="background: #c9bd60;padding: 6px;">
                   <span class="fa fa-trophy" style="font-size: 5em;color: white;"></span>
                 </div>
-                <div style="background: #557aaf;"><h5 style="margin-top: 0px;color:white" class="card-title">Plano : Ouro</h5></div>
+                <div style="background: #bbb05b;"><h5 style="margin-top: 0px;color:white" class="card-title">Plano : Ouro</h5></div>
                 <p class="card-text">
                   <ul style="list-style: none;text-align: left;">
                     <li class="destaque"><strong>Está Incluso:</strong></li>
@@ -632,7 +632,7 @@
           </div>
 
           <div class="row" style="margin-top: 34px;">
-            <div class="col-md-4" style="margin-left: 294px;">
+            <div class="col-md-4" style="margin-left: 26%;">
               <input type="number" id="qtd_unid" class="form-control" placeholder="Quantidade de Unidades"/>
             </div>
             <div class="col-md-4" style="margin-top: 10px;">
@@ -843,6 +843,11 @@
           )
          }   
       }
+
+      $('#btn-fz-simula').click(function(){
+        var position  = $('.simular').offset();
+        $('html, body').animate({ scrollTop: position.top-100 }, 1000);
+      });
 
       
         
