@@ -141,6 +141,17 @@
         .hvr-rectangle-out:before {
             background: #678ec6 !important;
          }
+
+         @media(max-width:1366px){
+            .art-1{
+              left: 3% !important;
+            }
+
+            .art-2{
+              left: -6% !important;
+            }
+
+         }
     </style>
   </head>
   <body>
@@ -260,8 +271,8 @@
         <li style="background-image: url(img/slider_1.jpg)" class="overlay">
           <div class="container">
             <div class="row">
-            <div class="col-md-4" style="left: -8%;margin-top: 128px;"><img style="width: 62%;" src="/controlcondo/img/home.png"></div>
-            <div class="col-md-2" style="left: -15%;margin-top: 240px;"><img style="width: 100%;" src="/controlcondo/img/ocorrencia.png"></div>
+            <div class="col-md-4 art-1" style="left: -8%;margin-top: 128px;"><img style="width: 62%;" src="/controlcondo/img/home.png"></div>
+            <div class="col-md-2 art-2" style="left: -15%;margin-top: 240px;"><img style="width: 100%;" src="/controlcondo/img/ocorrencia.png"></div>
 
               <div class="col-md-6">
                 <div class="probootstrap-slider-text text-center" style="padding: 24px;">
@@ -408,7 +419,7 @@
     </section>      
     
    
-    <section class="fundo-costumer probootstrap-section proboostrap-clients probootstrap-bg-white probootstrap-zindex-above-showcase" style="padding:0px">
+    <!--<section class="fundo-costumer probootstrap-section proboostrap-clients probootstrap-bg-white probootstrap-zindex-above-showcase" style="padding:0px">
       <div class="col-md-12 section-heading probootstrap-animate fadeIn probootstrap-animated" data-animate-effect="fadeIn">
               <div class="title_show">
                 <h1 style="color:white">PACOTE DE SISTEMA - CONTROL CONDO</h1>
@@ -416,9 +427,6 @@
               <h3 style="font-size: 19px;color: rgba(0,0,0,.3);margin-left: 35%;">Confira todos os nossos planos e preços do pacote de sistema</h3>
       </div>
       <div class="container">
-      
-         
-        <!-- END row -->
         <div class="row">
           <div class="col-md-4 col-sm-6 col-xs-6 text-center client-logo probootstrap-animate" data-animate-effect="fadeIn">
             <div class="card bg-dark text-white">
@@ -520,7 +528,6 @@
         </div>
       </div>
 
-       <!-- send email -->
     <div class="container" style="display:none" id="send-email">
          <div class="row" style="margin-bottom: 17px;">
             <div class="col-md-7">
@@ -546,7 +553,7 @@
             </div>
          </div> 
      </div>
-    </section>
+    </section>-->
          
    
 
@@ -704,7 +711,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="row">
               <div class="col-md-4">
                 <div class="probootstrap-footer-widget">
@@ -876,23 +883,59 @@
       });
 
       function calc(){
-          var qtd  = $('#qtd_unid').val();
-          var calc = qtd*2;
-          var f2 = calc.toLocaleString('pt-br', {minimumFractionDigits: 2});
+          let qtd   = $('#qtd_unid').val();
+          let calc  = qtd*2;
+
+          if(calc <= 200){
+              calc = 200;
+          };
+          
+          let valor = calc.toLocaleString('pt-br', {minimumFractionDigits: 2});
 
           if(qtd == ''){
-            Swal.fire(
-            'Valor Plano',
-            'Preencha a quantidade de unidades.',
-            'error'
-          )
+              Swal.fire(
+                'Erro',
+                'Preencha a quantidade de unidades.',
+                'error'
+              )
           }else{
+              Swal.fire({
+                type: 'success',
+                title: 'Enviar Proposta',
+                html: formulario(valor,qtd),
+                showCancelButton: true,
+                confirmButtonText: 'Enviar Proposta',
+                showLoaderOnConfirm: true
+            }).then((result) => {
+              if (result.value) {
+                  confirma_envio();
+              } else if (
+                result.dismiss === Swal.DismissReason.cancel
+              ) {
+                
+                }
+            })
+         }     
+      }
+
+      function confirma_envio(){
             Swal.fire(
-            'Valor Plano',
-            f2+' R$ / Mês.',
-            'success'
-          )
-         }   
+                'Sucesso',
+                'Sua proposta foi enviada com sucesso!',
+                'success'
+              )
+      }
+
+      function formulario(valor,unidade){
+          let html = '<div class="row"><div class="col-md-12"><input style="margin-bottom: 9px;" class="form-control" type="text" placeholder="Nome Condominio"/></div>';
+              html += '<div class="col-md-12"><input style="margin-bottom: 9px;"  class="form-control" type="text" placeholder="Nome Contato"/></div>';
+              html += '<div class="col-md-12"><input style="margin-bottom: 9px;width:50%"  class="form-control" type="text" placeholder="Telefone"/></div>';
+              html += '<div class="col-md-12"><input style="margin-bottom: 9px;"  class="form-control" type="text" placeholder="E-mail"/></div>';
+              html += '<div class="col-md-3"><input disabled value="'+unidade+' Unidades" style="color: #51df01;margin-bottom: 9px;"  class="form-control" type="text" placeholder="Unidades"/></div>';
+              html += '<div class="col-md-4"><input disabled value="'+valor+' R$ / Mês" style="color: #51df01;margin-bottom: 9px;" class="form-control" type="text" placeholder="Valor R$"/></div>';             
+              html += '<div class="col-md-12"><textarea style="margin-bottom: 9px;" rows="5" class="form-control" type="text" placeholder="Observação"></textarea></div>';
+        
+          return html;
       }
 
       $('#btn-fz-simula').click(function(){
