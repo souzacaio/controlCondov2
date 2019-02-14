@@ -29,6 +29,24 @@
             color:white;
         }
 
+        .swal2-popup .swal2-styled.swal2-confirm {
+            border: 0;
+            border-radius: .25em;
+            background: initial;
+            background-color: #3085d6;
+            color: #fff;
+            font-size: 1.5em;
+        }
+
+        .swal2-popup .swal2-styled.swal2-cancel {
+              border: 0;
+              border-radius: .25em;
+              background: initial;
+              background-color: #aaa;
+              color: #fff;
+              font-size: 1.5em;
+          }
+
         .swal2-popup {
    
           width: 60% !important;
@@ -376,48 +394,41 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="probootstrap-section probootstrap-bg-white ">
+    </section> 
+    
+  
+    <section class="probootstrap-section probootstrap-bg-white" style="padding-bottom: 25px;">
       <div class="owl-carousel owl-work">
         <div class="item">
-          <a href="portfolio-single.html">
-            <img src="img/work_1.jpg" alt="Free Bootstrap Template by uicookies.com">
-          </a>
+            <img src="/controlcondo/img/home.png" style="width:37%;margin-left:30%"/>
         </div>
         <div class="item">
-          <a href="portfolio-single.html">
-            <img src="img/work_2.jpg" alt="Free Bootstrap Template by uicookies.com">
-          </a>
+          <img src="/controlcondo/img/ocorrencia.png" style="width:37%;margin-left: 30%"/> 
         </div>
         <div class="item">
-          <a href="portfolio-single.html">
-            <img src="img/work_3.jpg" alt="Free Bootstrap Template by uicookies.com">
-          </a>
+          <img src="/controlcondo/img/qrcode.png" style="width:37%;margin-left: 30%"/>
         </div>
         <div class="item">
-          <a href="portfolio-single.html">
-            <img src="img/work_4.jpg" alt="Free Bootstrap Template by uicookies.com">
-          </a>
+          <img src="/controlcondo/img/controlcondo_web.png" style=""/>
         </div>  
         <div class="item">
           <a href="portfolio-single.html">
-            <img src="img/work_5.jpg" alt="Free Bootstrap Template by uicookies.com">
-          </a>
-        </div>
-        <div class="item">
-          <a href="portfolio-single.html">
-            <img src="img/work_6.jpg" alt="Free Bootstrap Template by uicookies.com">
-          </a>
-        </div>
-        <div class="item">
-          <a href="portfolio-single.html">
-            <img src="img/work_7.jpg" alt="Free Bootstrap Template by uicookies.com">
+            <img src="/controlcondo/img/controlcondo_reserva.png" style="" >
           </a>
         </div>
       </div>
     </section>      
     
+    <section class="probootstrap-section proboostrap-clients probootstrap-bg-white probootstrap-zindex-above-showcase" style="padding: 0 20px 0 19px;">
+      <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
+            <h2>SOBRE</h2>
+            <h3 style="font-size: 19px;color:rgba(0,0,0,.3)">Confira alguns de nossos processos na gestão de condominio.</h3>
+          </div>
+      </div>
+      
+      <img src="img/pg_controlcondo.png" style="width: 94%;margin-left: 3%;padding: 22px 0 22px 0px;">
+   </section>
    
     <!--<section class="fundo-costumer probootstrap-section proboostrap-clients probootstrap-bg-white probootstrap-zindex-above-showcase" style="padding:0px">
       <div class="col-md-12 section-heading probootstrap-animate fadeIn probootstrap-animated" data-animate-effect="fadeIn">
@@ -689,14 +700,6 @@
     </section>
     
 
-
-
-
-
-
-
-
-    
     <footer class="probootstrap-footer">
       <div class="container" style="width:95%">
         <div class="row">
@@ -931,8 +934,8 @@
               html += '<div class="col-md-12"><input style="margin-bottom: 9px;"  class="form-control" type="text" placeholder="Nome Contato"/></div>';
               html += '<div class="col-md-12"><input style="margin-bottom: 9px;width:50%"  class="form-control" type="text" placeholder="Telefone"/></div>';
               html += '<div class="col-md-12"><input style="margin-bottom: 9px;"  class="form-control" type="text" placeholder="E-mail"/></div>';
-              html += '<div class="col-md-3"><input disabled value="'+unidade+' Unidades" style="color: #51df01;margin-bottom: 9px;"  class="form-control" type="text" placeholder="Unidades"/></div>';
-              html += '<div class="col-md-4"><input disabled value="'+valor+' R$ / Mês" style="color: #51df01;margin-bottom: 9px;" class="form-control" type="text" placeholder="Valor R$"/></div>';             
+              html += '<div class="col-md-3"><input disabled value="'+unidade+' Unidades" style="color: #1b3ef7;margin-bottom: 9px;"  class="form-control" type="text" placeholder="Unidades"/></div>';
+              html += '<div class="col-md-4"><input disabled value="'+valor+' R$ / Mês" style="color: #1b3ef7;margin-bottom: 9px;" class="form-control" type="text" placeholder="Valor R$"/></div>';             
               html += '<div class="col-md-12"><textarea style="margin-bottom: 9px;" rows="5" class="form-control" type="text" placeholder="Observação"></textarea></div>';
         
           return html;
