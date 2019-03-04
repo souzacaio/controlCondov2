@@ -426,8 +426,9 @@
             <h3 style="font-size: 19px;color:rgba(0,0,0,.3)">Confira alguns de nossos processos na gestão de condominio.</h3>
           </div>
       </div>
+
+         <img src="img/interacao1.png" class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated" style="    margin-bottom: 40px;width: 54%;">
       
-      <img src="img/pg_controlcondo.png" style="width: 94%;margin-left: 3%;padding: 22px 0 22px 0px;">
    </section>
    
     <!--<section class="fundo-costumer probootstrap-section proboostrap-clients probootstrap-bg-white probootstrap-zindex-above-showcase" style="padding:0px">
