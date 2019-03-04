@@ -426,9 +426,9 @@
             <h3 style="font-size: 19px;color:rgba(0,0,0,.3)">Confira alguns de nossos processos na gestão de condominio.</h3>
           </div>
       </div>
-
-         <img src="img/interacao1.png" class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated" style="    margin-bottom: 40px;width: 54%;">
-      
+      <div class="fundo-costumer container">
+         <img src="img/interacao1.png" class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated" style="margin-bottom: 40px;width: 40%; margin-top: 40px;">
+      </div>
    </section>
    
     <!--<section class="fundo-costumer probootstrap-section proboostrap-clients probootstrap-bg-white probootstrap-zindex-above-showcase" style="padding:0px">
@@ -576,22 +576,22 @@
             <div class="service left-icon probootstrap-animate" data-animate-effect="fadeInLeft">
               <div class="icon"><i class="icon-mobile3"></i></div>
               <div class="text">
-                <h3>Responsive Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit iusto provident.</p>
+                <h3>Interface</h3>
+                <p>Interface amigável e de fácil utilização</p>
               </div>  
             </div>
             <div class="service left-icon probootstrap-animate" data-animate-effect="fadeInLeft">
-              <div class="icon"><i class="icon-presentation"></i></div>
+              <div class="icon"><i class="fa fa-car"></i></div>
               <div class="text">
-                <h3>Business Solutions</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit iusto provident.</p>
+                <h3>Comodidade e Mobilidade</h3>
+                <p>Seu condomínio onde você estiver</p>
               </div>
             </div>
             <div class="service left-icon probootstrap-animate" data-animate-effect="fadeInLeft">
-              <div class="icon"><i class="icon-circle-compass"></i></div>
+              <div class="icon"><i class="fa fa-lock"></i></div>
               <div class="text">
-                <h3>Brand Identity</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit iusto provident.</p>
+                <h3>Segurança</h3>
+                <p>Todos os dados estão seguros, o Control Condo utiliza as melhores tecnologias de criptografia na conexão.</p>
               </div>
             </div>
           </div>
