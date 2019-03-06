@@ -29,6 +29,27 @@
             color:white;
         }
 
+        .artone{
+          position:relative;
+          width:30%;
+          float:left;
+          padding: 42px 0 0 98px;
+        }
+
+        .arttwo{
+          position:relative;
+          width:30%;
+          float:right;
+          margin: 115px -21px 0;
+        }
+
+        .artthree{
+          position:relative;
+          width:30%;
+          float:right;
+          margin: 115px -21px 0;
+        }
+
         .swal2-popup .swal2-styled.swal2-confirm {
             border: 0;
             border-radius: .25em;
@@ -427,7 +448,15 @@
           </div>
       </div>
       <div class="fundo-costumer container">
-         <img src="img/interacao1.png" class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated" style="margin-bottom: 40px;width: 40%; margin-top: 40px;">
+       <div class="col-md-4">
+          <img src="img/interacao1.png" style="height: 900px;" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
+       </div>
+       <div class="col-md-4">
+          <img src="img/teste.png" style="height: 757px;" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
+       </div>
+       <div class="col-md-4">
+          <img src="img/manwoman.png" style="height: 757px;" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
+       </div>
       </div>
    </section>
    
@@ -574,7 +603,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="service left-icon probootstrap-animate" data-animate-effect="fadeInLeft">
-              <div class="icon"><i class="icon-mobile3"></i></div>
+              <div class="icon"><i class="fa fa-phone"></i></div>
               <div class="text">
                 <h3>Interface</h3>
                 <p>Interface amigável e de fácil utilização</p>
@@ -944,7 +973,7 @@
 
       $('#btn-fz-simula').click(function(){
         var position  = $('.simular').offset();
-        $('html, body').animate({ scrollTop: position.top-100 }, 1000);
+        $('html, body').animate({ scrollTop: position.top-100 }, 2000);
       });
 
       (function(d, s, id) {
