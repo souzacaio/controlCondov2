@@ -169,7 +169,7 @@
 
         .fundo-costumer{
           padding: 0px;
-          background: url(http://web.controlcondo.com.br/arquivos/2018/04/pattern.png) no-repeat center top fixed !important;
+          background: url(./img/pattern.png) no-repeat center top fixed !important;
           width: 100%;
           overflow: hidden;
           background-repeat: repeat !important;
@@ -448,15 +448,14 @@
           </div>
       </div>
       <div class="fundo-costumer container">
-       <div class="col-md-4">
-          <img src="img/interacao1.png" style="height: 900px;" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
+      <section>
+       <div class="col-md-4" style="margin: 33px 0 0 207px;">
+          <img src="img/interacao1.png" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
        </div>
-       <div class="col-md-4">
-          <img src="img/teste.png" style="height: 757px;" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
+       <div class="col-md-4" style="margin-left: 160px;margin-top: 140px;">
+          <img src="img/teste.png" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
        </div>
-       <div class="col-md-4">
-          <img src="img/manwoman.png" style="height: 757px;" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
-       </div>
+       </section>
       </div>
    </section>
    
