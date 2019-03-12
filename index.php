@@ -177,6 +177,16 @@
 
         }
 
+        .fundo-video{
+          padding: 0px;
+          background: url('img/13651') ;
+          width: 100%;
+          overflow: hidden;
+          background-repeat: repeat !important;
+          background-size: 61%;
+
+        }
+
         .hvr-rectangle-out:before {
             background: #678ec6 !important;
          }
@@ -438,7 +448,52 @@
           </a>
         </div>
       </div>
-    </section>      
+    </section> 
+
+    <section class="probootstrap-section probootstrap-bg-white " style="padding-bottom: 25px;">
+      <div class="owl-carousel owl-work fundo-video" >
+        <div class="item">
+             <div class="col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
+                  <iframe width="400" height="400" src="https://www.youtube.com/embed/g9gu8TNTRME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+              </div>
+        </div>
+        <div class="item">
+             <div class="col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
+             <iframe width="400" height="400" src="https://www.youtube.com/embed/TS4woa5CO-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="item">
+             <div class="col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
+             <iframe width="400" height="400" src="https://www.youtube.com/embed/T6vbtlkMHCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="item">
+             <div class="col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
+             <iframe width="400" height="400" src="https://www.youtube.com/embed/lk8yDscZ4aA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+        
+       
+      </div>
+    </section> 
+
+
+          
+   <!-- <section class="probootstrap-section proboostrap-clients probootstrap-bg-white probootstrap-zindex-above-showcase" style="padding: 0 20px 0 19px;">
+         <div class="owl-carousel owl-work owl-theme owl-loaded owl-text-select-on">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
+                <h2>Diferenciais</h2>
+                <h3 style="font-size: 19px;color:rgba(0,0,0,.3)">Confira as funcionalidades criadas para auxiliar na gestão do seu condominio.</h3>
+              </div>
+              <div class="col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated fundo-video"  style="padding: 76px;">
+                  <iframe width="800" height="400" src="https://www.youtube.com/embed/g9gu8TNTRME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+              </div>
+          </div> 
+      </div>
+   </section>  -->
     
     <section class="probootstrap-section proboostrap-clients probootstrap-bg-white probootstrap-zindex-above-showcase" style="padding: 0 20px 0 19px;">
       <div class="row">
@@ -452,7 +507,7 @@
        <div class="col-md-4" style="margin: 33px 0 0 207px;">
           <img src="img/interacao1.png" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
        </div>
-       <div class="col-md-4" style="margin-left: 160px;margin-top: 140px;">
+       <div class="col-md-4" style="margin-left: 201px;margin-top: 280px;">
           <img src="img/teste.png" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
        </div>
        </section>
