@@ -212,23 +212,13 @@
 
         <div id="navbar-collapse" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li class="dropdown">
               <a href="#" data-toggle="dropdown" class="dropdown-toggle">Funções</a>
               <ul class="dropdown-menu">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="portfolio-single.html">Portfolio Single</a></li>
-                <li class="dropdown-submenu dropdown">
-                  <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Sub Menu</span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Second Level Menu</a></li>
-                    <li><a href="#">Second Level Menu</a></li>
-                    <li><a href="#">Second Level Menu</a></li>
-                    <li><a href="#">Second Level Menu</a></li>
-                  </ul>
-                </li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="portfolio.html">Simulação</a></li>
+                <li><a href="portfolio-single.html">Funcionalidades</a></li>
               </ul>
             </li>
             <li><a href="contact.html">Diferenciais</a></li>
@@ -409,9 +399,22 @@
             </div>
         </div>
         <!-- END row -->
+        <div class="row morefunction" style="display:none">
+        <div class="col-md-4 probootstrap-animate fadeIn probootstrap-animated" style="padding-left: 0px;" data-animate-effect="fadeIn">
+                <div class="service hover_service text-center" style="height: 429px;">
+                <div class="icon"><i class="fa fa-chat"></i></div>
+                <div class="text">
+                    <h3>CHAT</h3>
+                    <p>O morador pode habilitar a função de chat, para comunicação com outros condôminos, síndicos e administradores.</p>
+                </div>  
+                </div>
+            </div>
+        
+        
+        </div>
         <div class="row mt50">
           <div class="col-md-12 text-center">
-            <a href="services.html" class="btn btn-primary btn-lg" role="button">MAIS FUNÇÕES</a>
+            <a class="btn btn-primary btn-lg" role="button" onclick="morefunction()">Mais Funções</a>
           </div>
         </div>
       </div>
@@ -449,7 +452,7 @@
       </div>
       <div class="fundo-costumer container">
       <section>
-       <div class="col-md-4" style="margin: 33px 0 0 207px;">
+       <div class="col-md-4" style="margin: 33px 0 0 6%;">
           <img src="img/interacao1.png" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
        </div>
        <div class="col-md-4" style="margin-left: 160px;margin-top: 140px;">
@@ -983,6 +986,12 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 
+
+    function morefunction(){
+
+          $('.morefunction').slideToggle()
+      
+    }
     </script>
   </body>
 </html>
