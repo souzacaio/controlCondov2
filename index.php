@@ -187,6 +187,30 @@
 
         }
 
+        .fundo-integrador{
+
+           padding: 0px;
+          background: url('img/4880') fixed ;
+          width: 100%;
+          overflow: hidden;
+          background-repeat: repeat !important;
+          background-size: 100%;
+          height: 400px;
+
+        }
+
+        .fundo-diferencial{
+
+          padding: 0px;
+          background: url('img/25060') fixed;
+          width: 100%;
+          overflow: hidden;
+          background-repeat: repeat !important;
+          background-size: 100%;
+          height: 400px;
+
+          }
+
         .hvr-rectangle-out:before {
             background: #678ec6 !important;
          }
@@ -418,9 +442,7 @@
                     <p>O morador pode habilitar a função de chat, para comunicação com outros condôminos, síndicos e administradores.</p>
                 </div>  
                 </div>
-            </div>
-        
-        
+            </div>  
         </div>
         <div class="row mt50">
           <div class="col-md-12 text-center">
@@ -432,7 +454,15 @@
     
   
     <section class="probootstrap-section probootstrap-bg-white" style="padding-bottom: 25px;">
-      <div class="owl-carousel owl-work">
+    <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
+              <h2>Website e Mobile App</h2>
+              <h3 style="font-size: 19px;color:rgba(0,0,0,.3)">
+                 Confira a interface grafica de alguns de nossos modulos.
+              </h3>
+            </div>
+        </div>
+      <div class="owl-carousel owl-work" style="background-color:rgb(251, 251, 251);padding:56px 0 56px 0">
         <div class="item">
             <img src="/controlcondo/img/home.png" style="width:37%;margin-left:30%"/>
         </div>
@@ -453,7 +483,66 @@
       </div>
     </section> 
 
-    <section class="probootstrap-section probootstrap-bg-white " style="padding-bottom: 25px;">
+    
+    <section class="probootstrap-section probootstrap-bg-white" style="padding-bottom: 25px;">
+      <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
+              <h2>SEJA UM INTEGRADOR CONTROL CONDO</h2>
+              <h3 style="font-size: 19px;color:rgba(0,0,0,.3)">
+                 Sendo um representante Control Condo você complementa sua renda e melhora a vida dos moradores!
+              </h3>
+            </div>
+        </div>
+      <div class="fundo-integrador" >
+        <div class="row" style="margin: 13% 0 0 20%;">
+        <div class="col-md-7">
+          <input type="text" placeholder="E-mail" style="padding-left: 18px;width:100%" />
+        </div>
+        <div class="col-md-5">
+          <button class="btn btn-success" style="height: 49px;"><span class="fa fa-email"></span> Enviar</button>
+        </div>
+        </div>
+      </div>
+    </section> 
+
+     <section class="probootstrap-section probootstrap-bg-white" style="padding-bottom: 25px;">
+      <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
+              <h2>Diferencial</h2>
+              <h3 style="font-size: 19px;color:rgba(0,0,0,.3)">
+                 
+              </h3>
+            </div>
+        </div>
+      <div class="fundo-diferencial" >
+        <div class="row" style="margin: 8% 0 0 20%;">
+
+          <div class="col-md-4" style="color:white;background-color: rgba(37, 52, 81, 0.78);">
+            <h2 style="color:white">Condomínios residenciais horizontais</h2>
+            O Control Condo permite total controle dos acessos ao condomínio, com muita agilidade e praticidade para moradores, síndicos e administradores
+          </div>
+          <div class="col-md-4" style="margin-left: 12%;color:white;background-color: rgba(37, 52, 81, 0.78);">
+            <h2 style="color:white">Condomínios residenciais verticais</h2>
+            Nos prédios o Control Condo oferece uma praticidade de controle de acesso, sem que o morador precise sair de seu apartamento.
+          </div>
+       
+        </div>
+      </div>
+    </section> 
+
+
+
+
+
+
+
+    <section class="probootstrap-section probootstrap-bg-white" style="padding-bottom: 25px;">
+      <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
+              <h2>Funcionalidades</h2>
+              <h3 style="font-size: 19px;color:rgba(0,0,0,.3)">Confira as funcionalidades contidas no sistema.</h3>
+            </div>
+        </div>
       <div class="owl-carousel owl-work fundo-video" >
         <div class="item">
              <div class="col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
@@ -507,12 +596,12 @@
       </div>
       <div class="fundo-costumer container">
       <section>
-       <div class="col-md-4" style="margin: 33px 0 0 6%;">
+       <div class="col-md-4" style="margin: 33px 0 0 31%;">
           <img src="img/interacao1.png" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
        </div>
-       <div class="col-md-4" style="margin-left: 201px;margin-top: 280px;">
+       <!--<div class="col-md-4" style="margin-left: 201px;margin-top: 280px;">
           <img src="img/teste.png" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
-       </div>
+       </div>-->
        </section>
       </div>
    </section>
@@ -683,26 +772,26 @@
           </div>
           <div class="col-md-6">
             <div class="service left-icon probootstrap-animate" data-animate-effect="fadeInLeft">
-              <div class="icon"><i class="icon-lightbulb"></i></div>
+              <div class="icon"><i class="fa fa-ring"></i></div>
               <div class="text">
-                <h3>Creative Ideas</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <h3>Integração Total</h3>
+                <p>Integração total com o controle de acesso do condomínio</p>
               </div>  
             </div>
             
             <div class="service left-icon probootstrap-animate" data-animate-effect="fadeInLeft">
-              <div class="icon"><i class="icon-magnifying-glass2"></i></div>
+              <div class="icon"><i class="fa fa-check-circle"></i></div>
               <div class="text">
-                <h3>Search Engine Friendly</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <h3>Control Guarita</h3>
+                <p>Integração total com o sistema Control Guarita</p>
               </div>
             </div>
             
             <div class="service left-icon probootstrap-animate" data-animate-effect="fadeInLeft">
-              <div class="icon"><i class="icon-browser2"></i></div>
+              <div class="icon"><i class="fa fa-check"></i></div>
               <div class="text">
-                <h3>Easy Customization</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <h3>Oportunidades</h3>
+                <p>Divulgação de oportunidades em uma área de classificados para todos moradores.</p>
               </div>
             </div>
 
