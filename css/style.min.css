@@ -42,3 +42,112 @@ button{
  border-radius: 0px !important;
 
 }
+
+
+@media only screen and (max-width:738px) {
+    .mobile_menu_logo{
+
+      padding: 1% 0% 2% 2%;
+  }
+
+  .mobile_menu_logo2{
+      
+      padding: 4.5% 10.99% 0 0;
+  }
+
+  .flexslider, .flexslider .slides>li, .slider-height{
+
+      height: 471px;
+
+  }
+
+  .flexslider .probootstrap-slider-text {
+
+     margin: 26% 0 0 9%;
+
+   }
+
+   .flexslider .probootstrap-slider-text {
+      margin-top: 93px !important;
+   }
+
+   .btn_effect {
+      border: 1px solid white;
+      width: 262px;
+      height: 44px;
+      padding: 7px 0px 0 66px;
+      cursor: pointer;
+      color: white;
+  }
+
+  .art-1 img{
+
+    	width: 100% !important;
+  }
+
+  .flexslider .probootstrap-slider-text {
+
+     padding:0px !important;
+
+  }
+
+  .flexslider, .flexslider .slides>li, .slider-height {
+
+    height: 659px;
+
+  }
+
+  .mainart{
+
+    top: 61px;
+
+  }
+
+  .integradorresp{
+
+    margin: 48% 0 0 0% !important;
+
+  }
+
+  .fundo-diferencialresp{
+
+      margin: 8% 0 0 4% !important; 
+      padding: 0 16px 0 7px;
+      
+  }
+
+  .fundo-diferencial {
+
+    
+     height: 476px !important;
+
+  }
+
+  .interacao1{
+
+    margin: 0px 0 0 0 !important;
+
+  }
+
+  .simule1{
+
+    margin-left:0px !important;
+
+  }
+
+  .simular2{
+
+     margin:0px !important; 
+
+  }
+
+
+  .simular {
+   
+    padding: 16px !important;
+    padding-left: 33px !important;
+    
+   }
+
+
+}

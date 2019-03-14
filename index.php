@@ -235,13 +235,13 @@
     <nav class="navbar navbar-default navbar-fixed-top probootstrap-navbar">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed mobile_menu_logo2" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-         <img src="/controlcondo/img/logo.png" style="width: 48%;margin-top: 1.99999%;"/>
+         <img src="/controlcondo/img/logo.png" class="mobile_menu_logo" style="width: 48%;margin-top: 1.99999%;"/>
         </div>
 
         <div id="navbar-collapse" class="navbar-collapse collapse">
@@ -269,7 +269,7 @@
         <li style="background-image: url(img/slider_1.jpg)" class="overlay">
           <div class="container">
             <div class="row">
-              <div class="col-md-8 col-md-offset-2">
+              <div class="col-md-8 col-md-offset-2 mainart">
                 <div class="probootstrap-slider-text text-center;" style="">
                 <p><h1 style="text-shadow: 0 1px 3px rgba(5, 5, 5, 0.69);" class="probootstrap-heading">A <span style="color: #3599d2;">aplicação</span> definitiva para o seu condomínio !</h1></p>
                 <p style="font-size: 17px;margin-top: -21px;">Incrível, Simples e Produtivo</p>
@@ -334,8 +334,8 @@
         <li style="background-image: url(img/slider_1.jpg)" class="overlay">
           <div class="container">
             <div class="row">
-            <div class="col-md-4 art-1" style="left: -8%;margin-top: 128px;"><img style="width: 62%;" src="/controlcondo/img/home.png"></div>
-            <div class="col-md-2 art-2" style="left: -15%;margin-top: 240px;"><img style="width: 100%;" src="/controlcondo/img/ocorrencia.png"></div>
+            <div class="col-md-4 col-xs-4 art-1" style="left: -8%;margin-top: 128px;"><img style="width: 62%;" src="/controlcondo/img/home.png"></div>
+            <div class="col-md-2 col-xs-2 art-2" style="left: -15%;margin-top: 240px;"><img style="width: 100%;" src="/controlcondo/img/ocorrencia.png"></div>
 
               <div class="col-md-6">
                 <div class="probootstrap-slider-text text-center" style="padding: 24px;">
@@ -351,7 +351,7 @@
         <li style="background-image: url(img/slider_1.jpg)" class="overlay">
         <div class="container">
             <div class="row">
-            <div class="col-md-4" style="left:9%;margin-top: 163px;"><img style="width: 62%;" src="/controlcondo/img/qrcode.png"></div>
+            <div class="col-md-4 col-xs-6 art-3" style="left:9%;margin-top: 163px;"><img style="width: 76%;" src="/controlcondo/img/qrcode.png"></div>
               <div class="col-md-6">
                 <div class="probootstrap-slider-text text-center" style="padding: 24px;">
                   <h1 class="probootstrap-heading" style="text-shadow: 0 2px 3px rgba(5, 5, 5, 0.48);margin-right: 517px;color:#3599d2"><span>Control</span><span style="margin-left: 18px;">Guarita</h1>
@@ -494,11 +494,11 @@
             </div>
         </div>
       <div class="fundo-integrador" >
-        <div class="row" style="margin: 13% 0 0 20%;">
-        <div class="col-md-7">
+        <div class="row integradorresp" style="margin: 13% 0 0 20%;" >
+        <div class="col-md-7 col-xs-7">
           <input type="text" placeholder="E-mail" style="padding-left: 18px;width:100%" />
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 col-xs-5">
           <button class="btn btn-success" style="height: 49px;"><span class="fa fa-email"></span> Enviar</button>
         </div>
         </div>
@@ -515,13 +515,12 @@
             </div>
         </div>
       <div class="fundo-diferencial" >
-        <div class="row" style="margin: 8% 0 0 20%;">
-
+        <div class="row fundo-diferencialresp"  style="margin: 8% 0 0 20%;">
           <div class="col-md-4" style="color:white;background-color: rgba(37, 52, 81, 0.78);">
             <h2 style="color:white">Condomínios residenciais horizontais</h2>
             O Control Condo permite total controle dos acessos ao condomínio, com muita agilidade e praticidade para moradores, síndicos e administradores
           </div>
-          <div class="col-md-4" style="margin-left: 12%;color:white;background-color: rgba(37, 52, 81, 0.78);">
+          <div class="col-md-4" style="color:white;background-color: rgba(37, 52, 81, 0.78);">
             <h2 style="color:white">Condomínios residenciais verticais</h2>
             Nos prédios o Control Condo oferece uma praticidade de controle de acesso, sem que o morador precise sair de seu apartamento.
           </div>
@@ -596,8 +595,8 @@
       </div>
       <div class="fundo-costumer container">
       <section>
-       <div class="col-md-4" style="margin: 33px 0 0 31%;">
-          <img src="img/interacao1.png" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
+       <div class="col-md-4 col-xs-12 interacao1" style="margin: 33px 0 0 31%;">
+          <img src="img/interacao1.png" style="width: 100%;" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
        </div>
        <!--<div class="col-md-4" style="margin-left: 201px;margin-top: 280px;">
           <img src="img/teste.png" class="text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
@@ -856,16 +855,15 @@
         </div>
         <!-- END row -->
         <div class="simular">
-          <div style="margin: -39px 0 0 38%;">
+          <div class="simular2" style="margin: -39px 0 0 38%;">
             <h1 style="color:white">Simule agora o seu plano! </h1>
           </div>
 
           <div class="row" style="margin-top: 34px;">
-
-            <div class="col-md-4" style="margin-left: 26%;">
-              <input type="number" id="qtd_unid" class="form-control" placeholder="Quantidade de Unidades"/>
+            <div class="col-md-4 col-xs-5 simule1" style="margin-left: 26%;">
+              <input type="number" id="qtd_unid" class="form-control" placeholder="Unidades"/>
             </div>
-            <div class="col-md-4" style="margin-top: 10px;">
+            <div class="col-md-4 col-xs-7" style="margin-top: 10px;">
                <span class="btn-calcular" onclick="calc()"><span class="fa fa-calculator"></span> Calcular</span>
             </div>
         </div>
@@ -1057,6 +1055,19 @@
     <script src="js/custom.min.js"></script>
     <script src="js/sweetalert2.min.js"></script>
     <script>
+
+
+      $(document).ready(function(){
+         let len = $(window).width();
+
+         if(len < 738){
+
+            $('.art-1').hide();
+            $('.art-2').hide();
+            $('.art-3').hide();
+         }
+      });
+
       $('.c_button').click(function(){
          $('#send-email').fadeIn();
       });
