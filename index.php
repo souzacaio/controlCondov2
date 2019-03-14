@@ -179,7 +179,7 @@
 
         .fundo-video{
           padding: 0px;
-          background: url('img/13651') ;
+          background: url('img/13651.jpg') ;
           width: 100%;
           overflow: hidden;
           background-repeat: repeat !important;
@@ -190,7 +190,7 @@
         .fundo-integrador{
 
            padding: 0px;
-          background: url('img/4880') fixed ;
+          background: url('img/4880.jpg') fixed ;
           width: 100%;
           overflow: hidden;
           background-repeat: repeat !important;
@@ -202,7 +202,7 @@
         .fundo-diferencial{
 
           padding: 0px;
-          background: url('img/25060') fixed;
+          background: url('img/25060.jpg') fixed;
           width: 100%;
           overflow: hidden;
           background-repeat: repeat !important;
