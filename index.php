@@ -1098,6 +1098,7 @@
                 showLoaderOnConfirm: true
             }).then((result) => {
               if (result.value) {
+                  sendEmail();
                   confirma_envio();
               } else if (
                 result.dismiss === Swal.DismissReason.cancel
@@ -1117,13 +1118,13 @@
       }
 
       function formulario(valor,unidade){
-          let html = '<div class="row"><div class="col-md-12"><input style="margin-bottom: 9px;" class="form-control" type="text" placeholder="Nome Condominio"/></div>';
-              html += '<div class="col-md-12"><input style="margin-bottom: 9px;"  class="form-control" type="text" placeholder="Nome Contato"/></div>';
-              html += '<div class="col-md-12"><input style="margin-bottom: 9px;width:50%"  class="form-control" type="text" placeholder="Telefone"/></div>';
-              html += '<div class="col-md-12"><input style="margin-bottom: 9px;"  class="form-control" type="text" placeholder="E-mail"/></div>';
-              html += '<div class="col-md-3"><input disabled value="'+unidade+' Unidades" style="color: #1b3ef7;margin-bottom: 9px;"  class="form-control" type="text" placeholder="Unidades"/></div>';
-              html += '<div class="col-md-4"><input disabled value="'+valor+' R$ / Mês" style="color: #1b3ef7;margin-bottom: 9px;" class="form-control" type="text" placeholder="Valor R$"/></div>';             
-              html += '<div class="col-md-12"><textarea style="margin-bottom: 9px;" rows="5" class="form-control" type="text" placeholder="Observação"></textarea></div>';
+          let html = '<div class="row"><div class="col-md-12"><input style="margin-bottom: 9px;" class="form-control" type="text" id="nomeCond" placeholder="Nome Condominio"/></div>';
+              html += '<div class="col-md-12"><input style="margin-bottom: 9px;"  class="form-control" type="text" id="nomeContato" placeholder="Nome Contato"/></div>';
+              html += '<div class="col-md-12"><input style="margin-bottom: 9px;width:50%"  class="form-control" type="text" id="TelefoneContato" placeholder="Telefone"/></div>';
+              html += '<div class="col-md-12"><input style="margin-bottom: 9px;"  class="form-control" type="text" id="EmailContato" placeholder="E-mail"/></div>';
+              html += '<div class="col-md-3"><input disabled value="'+unidade+' Unidades" style="color: #1b3ef7;margin-bottom: 9px;" id="UnidadeContato" class="form-control" type="text" placeholder="Unidades"/></div>';
+              html += '<div class="col-md-4"><input disabled value="'+valor+' R$ / Mês" style="color: #1b3ef7;margin-bottom: 9px;" id="ValorContato" class="form-control" type="text" placeholder="Valor R$"/></div>';             
+              html += '<div class="col-md-12"><textarea style="margin-bottom: 9px;" rows="5" class="form-control" type="text" id="ObsContato" placeholder="Observação"></textarea></div>';
         
           return html;
       }
@@ -1147,6 +1148,40 @@
           $('.morefunction').slideToggle()
       
     }
+
+    function sendEmail(){
+
+      let condominio = $('#nomeCond').val();
+      let nome       = $('#nomeContato').val();
+      let telefone   = $('#TelefoneContato').val();
+      let email      = $('#EmailContato').val();
+      let unidades   = $('#UnidadeContato').val();
+      let valor      = $('#ValorContato').val();
+      let obs        = $('#ObsContato').val();
+
+      $.ajax({
+
+          type:'POST',
+          url:'https://www.controlcondo.com.br/controlcondo/v2/sentemail/index.php',
+          data:{
+
+             nomecond:condominio,
+             nome:nome,
+             telefone:telefone,
+             de:email,
+             qtdunidade:unidades,
+             valor:valor,
+             obs:obs
+          },
+          success:function(){
+
+
+          }
+     })
+
+ }
+
+    
     </script>
   </body>
 </html>
