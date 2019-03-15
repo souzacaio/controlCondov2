@@ -149,5 +149,53 @@ button{
     
    }
 
+   .diferencialresp2{
+
+      margin-left:0px !important;
+
+   } 
+
+  .swal2-popup {
+
+    width: 100% !important;
+
+  }
+
+  #cel2{
+
+      margin-left:6% !important;
+  }
+
+  #cel1{
+
+    margin-left:46% !important;
+
+  }
+
+  #cel3{
+
+    margin-left:-32% !important;
+
+  }
+
+  #cel4{
+
+    width: 76% !important;
+    margin-left: -110% !important;
+
+  }
+
+  #cel5{
+
+    width: 76% !important;
+    margin-left: -25% !important;
+    margin-top:-55%;
+
+  }
+
+  body{
+
+    overflow-x: hidden;
+  }
 
 }

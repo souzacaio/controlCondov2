@@ -70,7 +70,7 @@
 
         .swal2-popup {
    
-          width: 60% !important;
+          width: 60%;
         }
 
         .swal2-popup .swal2-content {
@@ -464,20 +464,20 @@
         </div>
       <div class="owl-carousel owl-work" style="background-color:rgb(251, 251, 251);padding:56px 0 56px 0">
         <div class="item">
-            <img src="/controlcondo/img/home.png" style="width:37%;margin-left:30%"/>
+            <img src="/controlcondo/img/home.png" style="width:37%;margin-left:30%" id="cel1" />
         </div>
         <div class="item">
-          <img src="/controlcondo/img/ocorrencia.png" style="width:37%;margin-left: 30%"/> 
+          <img src="/controlcondo/img/ocorrencia.png" style="width:37%;margin-left: 30%" id="cel2"/> 
         </div>
         <div class="item">
-          <img src="/controlcondo/img/qrcode.png" style="width:37%;margin-left: 30%"/>
+          <img src="/controlcondo/img/qrcode.png" style="width:37%;margin-left: 30%" id="cel3"/>
         </div>
         <div class="item">
-          <img src="/controlcondo/img/controlcondo_web.png" style=""/>
+          <img src="/controlcondo/img/controlcondo_web.png" style="width:85%;margin-left: -39%" id="cel4"/>
         </div>  
         <div class="item">
           <a href="portfolio-single.html">
-            <img src="/controlcondo/img/controlcondo_reserva.png" style="" >
+            <img src="/controlcondo/img/controlcondo_reserva.png" style="width:100%;margin-left: 30%" id="cel5">
           </a>
         </div>
       </div>
@@ -520,7 +520,7 @@
             <h2 style="color:white">Condomínios residenciais horizontais</h2>
             O Control Condo permite total controle dos acessos ao condomínio, com muita agilidade e praticidade para moradores, síndicos e administradores
           </div>
-          <div class="col-md-4" style="color:white;background-color: rgba(37, 52, 81, 0.78);">
+          <div class="col-md-4 diferencialresp2" style="color:white;background-color: rgba(37, 52, 81, 0.78);margin-left: 12%;">
             <h2 style="color:white">Condomínios residenciais verticais</h2>
             Nos prédios o Control Condo oferece uma praticidade de controle de acesso, sem que o morador precise sair de seu apartamento.
           </div>
