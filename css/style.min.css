@@ -198,4 +198,70 @@ button{
     overflow-x: hidden;
   }
 
+  .panelfirst{
+
+    width:100%;
+    margin-left:1px;
+  }
+
+  .video{
+      width:348px !important;
+
+  }
+
+  .videofather{
+
+    padding-left: 7.7px !important;
+
+  }
+
+}
+
+@media screen and (min-width:361px) and (max-width:375px){
+
+  #cel2{
+
+      margin-left:19% !important;
+  }
+
+  #cel1{
+
+    margin-left:60% !important;
+
+  }
+
+  #cel3{
+
+    margin-left:-17% !important;
+
+  }
+
+  #cel4{
+
+    width: 80% !important;
+    margin-left: -90% !important;
+
+  }
+
+  #cel5{
+
+    width: 80% !important;
+    margin-left: -2% !important;
+    margin-top:-55%;
+
+  }
+
+  .video{
+      width:350px !important;
+
+  }
+
+  .videofather{
+
+    padding-left: 14px !important;
+
+  }
+
+
+
 }

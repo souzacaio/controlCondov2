@@ -250,15 +250,13 @@
             <li class="dropdown">
               <a href="#" data-toggle="dropdown" class="dropdown-toggle">Funções</a>
               <ul class="dropdown-menu">
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="portfolio.html">Simulação</a></li>
-                <li><a href="portfolio-single.html">Funcionalidades</a></li>
+                <li><a id="fcsobre" href="#">Sobre</a></li>
+                <li><a id="fcsimular" href="#">Simulação</a></li>
+                <li><a id="fcfuncionalidade" href="#">Funcionalidades</a></li>
               </ul>
             </li>
-            <li><a href="contact.html">Diferenciais</a></li>
-            <li><a href="contact.html">Pacote do Sistema</a></li>
-            <li><a href="contact.html">Novidades</a></li>
-            <li><a href="contact.html">Contato</a></li>
+            <li><a href="#">Novidades</a></li>
+            <li><a  id="fccontato" href="#">Contato</a></li>
           </ul>
         </div>
       </div>
@@ -365,7 +363,7 @@
       </ul>
     </section>
     <section class="probootstrap-section probootstrap-bg-white probootstrap-zindex-above-showcase">
-      <div class="container">
+      <div class="container panelfuncoes">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate" data-animate-effect="fadeIn">
             <h2>FUNÇÕES</h2>
@@ -373,7 +371,7 @@
         </div>
         <!-- END row -->
         <div class="row">
-            <div class="row probootstrap-gutter60">
+            <div class="row probootstrap-gutter60 panelfirst">
             <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
                 <div class="service hover_service text-center" style="height: 429px;">
                 <div class="icon"><i class="fa fa-bullhorn"></i></div>
@@ -402,7 +400,7 @@
                 </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row panelfirst">
             <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
                 <div class="service hover_service text-center" style="height: 429px;">
                 <div class="icon"><i class="icon icon-alarm"></i></div>
@@ -433,10 +431,10 @@
             </div>
         </div>
         <!-- END row -->
-        <div class="row morefunction" style="display:none">
+        <div class="row morefunction panelfirst" style="padding-right: 0px;display:none">
         <div class="col-md-4 probootstrap-animate fadeIn probootstrap-animated" style="padding-left: 0px;" data-animate-effect="fadeIn">
                 <div class="service hover_service text-center" style="height: 429px;">
-                <div class="icon"><i class="fa fa-chat"></i></div>
+                <div class="icon"><i class="fa fa-comment"></i></div>
                 <div class="text">
                     <h3>CHAT</h3>
                     <p>O morador pode habilitar a função de chat, para comunicação com outros condôminos, síndicos e administradores.</p>
@@ -473,11 +471,11 @@
           <img src="/controlcondo/img/qrcode.png" style="width:37%;margin-left: 30%" id="cel3"/>
         </div>
         <div class="item">
-          <img src="/controlcondo/img/controlcondo_web.png" style="width:85%;margin-left: -39%" id="cel4"/>
-        </div>  
+          <img src="/controlcondo/img/controlcondo_web.png" style="width:85%;" id="cel4"/>
+        </div> 
         <div class="item">
           <a href="portfolio-single.html">
-            <img src="/controlcondo/img/controlcondo_reserva.png" style="width:100%;margin-left: 30%" id="cel5">
+            <img src="/controlcondo/img/controlcondo_reserva.png" style="width:100%;" id="cel5">
           </a>
         </div>
       </div>
@@ -544,29 +542,25 @@
         </div>
       <div class="owl-carousel owl-work fundo-video" >
         <div class="item">
-             <div class="col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
-                  <iframe width="400" height="400" src="https://www.youtube.com/embed/g9gu8TNTRME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+             <div class="videofather col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
+                  <iframe class="video" width="400" height="400" src="https://www.youtube.com/embed/g9gu8TNTRME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
               </div>
         </div>
         <div class="item">
-             <div class="col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
-             <iframe width="400" height="400" src="https://www.youtube.com/embed/TS4woa5CO-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <div class="videofather col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
+             <iframe class="video" width="400" height="400" src="https://www.youtube.com/embed/TS4woa5CO-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         <div class="item">
-             <div class="col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
-             <iframe width="400" height="400" src="https://www.youtube.com/embed/T6vbtlkMHCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <div class="videofather col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
+             <iframe class="video" width="400" height="400" src="https://www.youtube.com/embed/T6vbtlkMHCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         <div class="item">
-             <div class="col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
-             <iframe width="400" height="400" src="https://www.youtube.com/embed/lk8yDscZ4aA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <div class="videofather col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
+             <iframe class="video" width="400" height="400" src="https://www.youtube.com/embed/lk8yDscZ4aA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </div>
-
-
-        
-       
+        </div>  
       </div>
     </section> 
 
@@ -586,7 +580,7 @@
       </div>
    </section>  -->
     
-    <section class="probootstrap-section proboostrap-clients probootstrap-bg-white probootstrap-zindex-above-showcase" style="padding: 0 20px 0 19px;">
+    <section class="probootstrap-section proboostrap-clients probootstrap-bg-white probootstrap-zindex-above-showcase" style="padding: 0 0px 0 0px;">
       <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
             <h2>SOBRE</h2>
@@ -815,26 +809,26 @@
               <div class="item">
 
                 <div class="probootstrap-testimony-wrap text-center">
-                  <figure>
+                  <!--<figure>
                     <img src="img/person_1.jpg" alt="Free Bootstrap Template by uicookies.com">
-                  </figure>
+                  </figure>-->
                   <blockquote class="quote">&ldquo;Posso ter mais de um perfil vinculados a mesma conta no Control Condo?.&rdquo; <cite class="author">&mdash; Lucas Silva <br></cite></blockquote>
                 </div>
 
               </div>
               <div class="item">
                 <div class="probootstrap-testimony-wrap text-center">
-                  <figure>
+                  <!--<figure>
                     <img src="img/person_2.jpg" alt="Free Bootstrap Template by uicookies.com">
-                  </figure>
+                  </figure>-->
                   <blockquote class="quote">&ldquo;Esqueci minha senha, como recuperar?.&rdquo; <cite class="author">&mdash; Rafael Aranha <br></cite></blockquote>
                 </div>
               </div>
               <div class="item">
                 <div class="probootstrap-testimony-wrap text-center">
-                  <figure>
+                  <!--<figure>
                     <img src="img/person_3.jpg" alt="Free Bootstrap Template by uicookies.com">
-                  </figure>
+                  </figure>-->
                   <blockquote class="quote">&ldquo;Como liberar um visitante pelo app?.&rdquo; <cite class="author">&mdash; Nicolas Souza <br></cite></blockquote>
                 </div>
               </div>
@@ -1132,6 +1126,26 @@
       $('#btn-fz-simula').click(function(){
         var position  = $('.simular').offset();
         $('html, body').animate({ scrollTop: position.top-100 }, 2000);
+      });
+
+       $('#fcsobre').click(function(){
+        var position  = $('.probootstrap-footer').offset();
+        $('html, body').animate({ scrollTop: position.top-100 }, 1000);
+      });
+
+      $('#fcsimular').click(function(){
+        var position  = $('.simular').offset();
+        $('html, body').animate({ scrollTop: position.top-100 }, 1000);
+      });
+
+      $('#fcfuncionalidade').click(function(){
+        var position  = $('.panelfuncoes').offset();
+        $('html, body').animate({ scrollTop: position.top-100 }, 1000);
+      });
+
+      $('#fccontato').click(function(){
+        var position  = $('.probootstrap-footer').offset();
+        $('html, body').animate({ scrollTop: position.top-100 }, 1000);
       });
 
       (function(d, s, id) {
