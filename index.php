@@ -349,7 +349,7 @@
         <li style="background-image: url(img/slider_1.jpg)" class="overlay">
         <div class="container">
             <div class="row">
-            <div class="col-md-4 col-xs-6 art-3" style="left:9%;margin-top: 163px;"><img style="width: 76%;" src="/controlcondo/img/qrcode.png"></div>
+            <div class="col-md-4 col-xs-6 art-3" style="left:9%;margin-top: 163px;"><img style="width: 64%;" src="/controlcondo/img/qrcode.png"></div>
               <div class="col-md-6">
                 <div class="probootstrap-slider-text text-center" style="padding: 24px;">
                   <h1 class="probootstrap-heading" style="text-shadow: 0 2px 3px rgba(5, 5, 5, 0.48);margin-right: 517px;color:#3599d2"><span>Control</span><span style="margin-left: 18px;">Guarita</h1>
@@ -451,7 +451,7 @@
     </section> 
     
   
-    <section class="probootstrap-section probootstrap-bg-white" style="padding-bottom: 25px;">
+    <!--<section class="probootstrap-section probootstrap-bg-white" style="padding-bottom: 25px;">
     <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
               <h2>Website e Mobile App</h2>
@@ -478,6 +478,53 @@
             <img src="/controlcondo/img/controlcondo_reserva.png" style="width:100%;" id="cel5">
           </a>
         </div>
+      </div>
+    </section> -->
+
+    <section class="probootstrap-section probootstrap-bg-white mobilephoto" style="padding-bottom: 25px;">
+      <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
+              <h2>Funcionalidades</h2>
+              <h3 style="font-size: 19px;color:rgba(0,0,0,.3)">Confira as funcionalidades contidas no sistema.</h3>
+            </div>
+        </div>
+      <div class="owl-carousel owl-work" style="background-color:rgb(251, 251, 251);padding:56px 0 56px 0" >
+        <div class="item">
+             <div class="videofather col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
+                <div style="width:348px;height:400px"> 
+                    <img src="/controlcondo/img/home_mobile.png"   />  
+                </div>
+                           
+             </div>
+        </div>
+        <div class="item">
+             <div class="videofather col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
+             <div style="width:448px;height:500px;padding-top:11px"> 
+                    <img src="/controlcondo/img/monitor_home.png"  class="art_monitor" />  
+                </div>                
+             </div>
+        </div> 
+        <div class="item">
+             <div class="videofather col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
+             <div style="width:348px;height:400px"> 
+                    <img src="/controlcondo/img/ocorrencia_mobile.png" />  
+                </div>              
+             </div>
+        </div>
+        <div class="item">
+             <div class="videofather col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
+             <div style="width:348px;height:400px"> 
+                    <img src="/controlcondo/img/qrcode_mobile.png" />  
+                </div>  
+             </div>
+        </div>
+        <div class="item">
+             <div class="videofather col-md-12 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated"  style="padding: 76px;">
+             <div style="width:448px;height:500px;padding-top:11px"> 
+                    <img src="/controlcondo/img/monitor_reserva.png"  class="art_monitor"/>  
+                </div>                
+             </div>
+        </div>   
       </div>
     </section> 
 
@@ -507,9 +554,7 @@
       <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center section-heading probootstrap-animate fadeInUp probootstrap-animated">
               <h2>Diferencial</h2>
-              <h3 style="font-size: 19px;color:rgba(0,0,0,.3)">
-                 
-              </h3>
+              <h3 style="font-size: 19px;color:rgba(0,0,0,.3)"></h3>
             </div>
         </div>
       <div class="fundo-diferencial" >
@@ -526,9 +571,6 @@
         </div>
       </div>
     </section> 
-
-
-
 
 
 
@@ -1085,10 +1127,10 @@
           }else{
               Swal.fire({
                 type: 'success',
-                title: 'Enviar Proposta',
+                title: 'Enviar Solicitação',
                 html: formulario(valor,qtd),
                 showCancelButton: true,
-                confirmButtonText: 'Enviar Proposta',
+                confirmButtonText: 'Enviar Solicitação',
                 showLoaderOnConfirm: true
             }).then((result) => {
               if (result.value) {
@@ -1106,7 +1148,7 @@
       function confirma_envio(){
             Swal.fire(
                 'Sucesso',
-                'Sua proposta foi enviada com sucesso!',
+                'Sua Solicitação foi enviada com sucesso!',
                 'success'
               )
       }
