@@ -262,6 +262,62 @@ button{
 
   }
 
+}
 
+@media screen and (min-width:376px) and (max-width:414px){
+
+
+#cel2{
+
+      margin-left:49% !important;
+  }
+
+  #cel1{
+
+    margin-left:80% !important;
+
+  }
+
+  #cel3{
+
+    margin-left:19% !important;
+
+  }
+
+  #cel4{
+
+    width: 80% !important;
+    margin-left: -33% !important;
+
+  }
+
+  #cel5{
+
+    width: 80% !important;
+    margin-left: -40% !important;
+    margin-top:1%;
+
+  }
+
+  .video{
+      width:350px !important;
+
+  }
+
+  .videofather{
+
+    padding-left: 14px !important;
+
+  }
+
+  .firstcel1{
+
+    position: relative;
+    width: 100%;
+    left: 38%;
+  }
 
 }
+
+
+
